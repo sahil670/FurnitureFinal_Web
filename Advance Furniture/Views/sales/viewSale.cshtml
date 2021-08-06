@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Advance_Furniture.Models.sale>
+
+@{
+    ViewData["Title"] = "viewSale";
+}
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        { 
+        <div class="col-md-6">
+
+            <h1>@Html.DisplayFor(modelItem => item.Name)</h1>
+            <hr/>
+            <h2>@Html.DisplayFor(modelItem => item.PName)</h2>
+            <hr/>
+            <p>@Html.DisplayFor(modelItem => item.Price)</p>
+
+        </div>
+        
+        }
+        </div>
+
+</div>
